@@ -90,7 +90,56 @@ h1 {
     animation-iteration-count: initial;
 }
 
+/* Contact Page */
 
+#form-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form-bg {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+    padding: 50px;
+    width: 75vw;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, rgba(5, 12, 0, 0.6), rgba(28, 34, 29, 0.6));
+    color: azure;
+}
+input {
+    background-color: rgba(35, 66, 3, 0.637);
+    color: cornsilk;
+    text-align: center;
+    border: 3px solid cornsilk;
+    border-radius: 5px;
+    padding: 4px 4px;
+    margin: 5px 0px;
+    width: 40%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.message {
+    text-align: start;
+    width: 60%;
+    height: 300px;
+}
+.submit {
+    width: 75px;
+    height: 40px;
+    border-radius: 40px;
+}
 
 
 

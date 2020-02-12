@@ -5,22 +5,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="">
-        <form action="mailto:henderson.wyatt95@gmail.com" method="post" enctype="multipart/form-data" name="EmailTetsForm">
-            Email: <br>
-            <input type="email" name="VisitorEmail" id="form email" placeholder="Enter Your Email" required> <br>
-            Name: <br>
-            <input type="text" name="VisitorName" id="form name" placeholder="Enter Your Name" required> <br>
-            Reason for Contacting: <br>
-            <select name="" id="form reasons" aria-required="true">
-                <option value="Job Offer">Job Offer</option>
-                <option value="Project Proposal">Project Proposal</option>
-                <option value="Other">Other</option>
-            </select> <br>
-            Your Message: <br>
-            <input type="text" name="VisitorMessage" id="form message" placeholder="Your Message" required> <br>
-            <input type="submit" value="send">
-        </form>
+    <div id="form-align">
+        <div id="form-bg">
+            <form action="mailto:henderson.wyatt95@gmail.com" method="post" enctype="multipart/form-data" name="EmailTetsForm">
+                Email: <br>
+                <input type="email" name="VisitorEmail" class="email" placeholder="Enter Your Email" required> <br>
+                Name: <br>
+                <input type="text" name="VisitorName" class="name" placeholder="Enter Your Name" required> <br>
+                Reason for Contacting: <br>
+                <select name="Contsct Reason" class="reasons" required>
+                    <option value="Job Offer">Job Offer</option>
+                    <option value="Project Proposal">Project Proposal</option>
+                    <option value="Other">Other</option>
+                </select> <br>
+                Your Message: <br>
+                <input type="text" name="VisitorMessage" class="message" placeholder="Your Message" required> <br>
+                <input type="submit" class="submit" value="send">
+            </form>
+        </div>
     </div>
 
     <nav id="bottom-nav">
