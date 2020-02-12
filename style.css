@@ -129,6 +129,10 @@ form {
     padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
 }
 .message {
     text-align: start;
