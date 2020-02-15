@@ -153,6 +153,67 @@ form {
     border-radius: 40px;
 }
 
+/* Projetcs Page*/
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-container {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.5) 10% , rgba(128, 128, 128, 0.5) 90% , rgba(0, 0, 0, 0.1) 100%);
+    margin: 25px;
+    border-radius: 20px;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 10% , rgba(128, 128, 128, 0.5) 90% , rgba(128, 128, 128, 0.1) 100%);
+    border-radius: 20px;
+    width: 75vw;
+    padding: 10px;
+    color: ivory;
+}
+.project {
+    display: grid;
+    grid-template-columns: 25vw auto 25vw;
+    grid-template-areas: 
+    "Info . Image";
+    border-radius: 5px;
+    width: 85%;
+    margin: 20px;
+    padding: 20px 0px;
+    background: linear-gradient(90deg, rgba(12, 11, 11, 0.8), rgba(4, 126, 4, 0.8));
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: initial;
+
+}
+.project-info {
+    padding-left: 10px;
+    margin: 10px;
+}
+.icon {
+    height: 30px;
+    width: 30px;
+}
+.image-box {
+    grid-column-start: 3;
+    align-self: center;
+}
+.project-image {
+    height: auto;
+    width: 90%;
+    margin: 10px;
+    justify-self: center;
+    border: 2px solid black;
+    
+}
+
 
 
 
