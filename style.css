@@ -97,6 +97,7 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
 #form-bg {
     display: grid;
     align-self: center;
@@ -109,6 +110,7 @@ h1 {
     background: linear-gradient(-90deg, rgba(5, 12, 0, 0.6), rgba(28, 34, 29, 0.6));
     color: azure;
 }
+
 input {
     background-color: rgba(35, 66, 3, 0.637);
     color: cornsilk;
@@ -134,11 +136,17 @@ form {
     animation-timing-function: ease-in;
     animation-iteration-count: initial;
 }
+
 .message {
+    background-color: rgba(35, 66, 3, 0.637);
+    padding: 5px;
+    border-radius: 5px;
+    color: cornsilk;
     text-align: start;
     width: 60%;
     height: 300px;
 }
+
 .submit {
     width: 75px;
     height: 40px;
