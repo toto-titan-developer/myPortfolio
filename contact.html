@@ -1,3 +1,9 @@
+<?php
+if($_POST["VisitorMessage"]) {
+    mail("henderson.wyatt95@gmail.com", $_POST["ContactReason"], $_POST["VisitorMessage"], "From: " + $_POST["VisitorEmail"]);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,19 +13,19 @@
 <body>
     <div id="form-align">
         <div id="form-bg">
-            <form action="mailto:henderson.wyatt95@gmail.com" method="post" enctype="multipart/form-data" name="EmailTetsForm">
+            <form action="contact.php" method="post" enctype="multipart/form-data" name="EmailTetsForm">
                 Email: <br>
                 <input type="email" name="VisitorEmail" class="email" placeholder="Enter Your Email" required> <br>
                 Name: <br>
                 <input type="text" name="VisitorName" class="name" placeholder="Enter Your Name" required> <br>
                 Reason for Contacting: <br>
-                <select name="Contsct Reason" class="reasons" required>
+                <select name="ContactReason" class="reasons" required>
                     <option value="Job Offer">Job Offer</option>
                     <option value="Project Proposal">Project Proposal</option>
                     <option value="Other">Other</option>
                 </select> <br>
                 Your Message: <br>
-                <textarea name="VisitorMessage" class="message" placeholder="Your Message" required></textarea> <br>
+                <textarea name="VisitorMessage" class="message" placeholder="Your Message"></textarea> <br>
                 <input type="submit" class="submit" value="send">
             </form>
         </div>
