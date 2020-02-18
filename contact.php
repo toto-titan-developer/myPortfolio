@@ -1,18 +1,27 @@
+debug
 <?php
-if($_POST["submit"]) {
+if(isset($_POST["submit"])) {
+    //Recipient
     $recipient="henderson.wyatt95@gmail.com";
+    // Subject
     $subject = $_POST["ContactReason"];
+
     $sender = $_POST["VisitorName"];
+
     $senderEmail = $_POST["VisitorEmail"];
     $message = $_POST["VisitorMessage"];
 
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+    $mailBody="Name: $sender\r\nEmail: $senderEmail\n\n$message";
 
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
+} else {
+    echo "Something Went Wrong!";
+    }
 ?>
+
+
 
 <!-- <!DOCTYPE html>
 <html lang="en">
