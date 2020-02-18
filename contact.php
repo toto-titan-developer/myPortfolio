@@ -1,4 +1,4 @@
-debug
+
 <?php
 if(isset($_POST["submit"])) {
     //Recipient
@@ -11,9 +11,9 @@ if(isset($_POST["submit"])) {
     $senderEmail = $_POST["VisitorEmail"];
     $message = $_POST["VisitorMessage"];
 
-    $mailBody="Name: $sender\r\nEmail: $senderEmail\n\n$message";
+    $mailBody="Name: $sender\r\nEmail: $senderEmail\r\n\r\n$message";
 
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+    mail($recipient, $subject, $mailBody);
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 } else {
