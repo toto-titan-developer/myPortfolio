@@ -12,9 +12,12 @@ if($_POST["submit"]) {
 
     $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>W.H Contacts</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -23,7 +26,7 @@ if($_POST["submit"]) {
     <?=$thankYou ?>
     <div id="form-align">
         <div id="form-bg">
-            <form action="contact.html" method="POST" enctype="multipart/form-data" name="EmailTetsForm">
+            <form action="contact.php" method="POST" enctype="multipart/form-data" name="EmailTetsForm">
                 Email: <br>
                 <input type="email" name="VisitorEmail" placeholder="Enter Your Email" required> <br>
                 Name: <br>
