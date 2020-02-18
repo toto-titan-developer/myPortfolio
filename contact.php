@@ -1,10 +1,10 @@
 <?php
 if($_POST["submit"]) {
     $recipient="henderson.wyatt95@gmail.com";
-    $subject=$_POST["ContactReason"];
-    $sender=$_POST["VisitorName"];
-    $senderEmail=$_POST["VisitorEmail"];
-    $message=$_POST["VisitorMessage"];
+    $subject = $_POST["ContactReason"];
+    $sender = $_POST["VisitorName"];
+    $senderEmail = $_POST["VisitorEmail"];
+    $message = $_POST["VisitorMessage"];
 
     $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
 
@@ -14,7 +14,7 @@ if($_POST["submit"]) {
 }
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -22,8 +22,6 @@ if($_POST["submit"]) {
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <?=$thankYou ?>
     <div id="form-align">
         <div id="form-bg">
             <form action="contact.php" method="POST" enctype="multipart/form-data" name="EmailTetsForm">
@@ -54,4 +52,4 @@ if($_POST["submit"]) {
     
     <script type="text/javascript" src="script.js"></script>
 </body>
-</html>
+</html> -->

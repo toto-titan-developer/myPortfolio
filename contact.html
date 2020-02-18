@@ -1,26 +1,11 @@
-<?php
-if($_POST["submit"]) {
-    $recipient="henderson.wyatt95@gmail.com";
-    $subject=$_POST["ContactReason"];
-    $sender=$_POST["VisitorName"];
-    $senderEmail=$_POST["VisitorEmail"];
-    $message=$_POST["VisitorMessage"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
     <title>W.H Contacts</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <?=$thankYou ?>
     <div id="form-align">
         <div id="form-bg">
             <form action="contact.html" method="POST" enctype="multipart/form-data" name="EmailTetsForm">
