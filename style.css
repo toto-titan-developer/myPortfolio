@@ -45,6 +45,7 @@ h1 {
     margin: 5px;
     font-size: 2em;
     background: linear-gradient(90deg, rgb(2, 70, 13), rgb(17, 12, 12));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation-name: slide;
