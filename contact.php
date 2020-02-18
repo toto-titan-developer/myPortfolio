@@ -2,7 +2,7 @@
 <?php
 if(isset($_POST["submit"])) {
     //Recipient
-    $recipient="henderson.wyatt95@gmail.com";
+    $recipient="henderson.wyatt95@outlook.com";
     // Subject
     $subject = $_POST["ContactReason"];
 
