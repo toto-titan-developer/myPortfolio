@@ -6,9 +6,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="bkg-st">
+        <div class="bkg-st-1"></div>
+    </div>
     <div id="form-align">
         <div id="form-bg">
-            <form action="contact.html" method="POST" enctype="multipart/form-data" name="EmailTetsForm">
+            <form action="contact.php" method="POST" enctype="multipart/form-data" name="EmailTetsForm">
                 Email: <br>
                 <input type="email" name="VisitorEmail" placeholder="Enter Your Email" required> <br>
                 Name: <br>
@@ -21,7 +24,10 @@
                 </select> <br>
                 Your Message: <br>
                 <textarea name="VisitorMessage" class="message" placeholder="Your Message"></textarea> <br>
-                <input type="submit" class="submit" value="send">
+                <button type="submit" class="submit">
+                    <img class="logo" src="images/mail_icon2.png" alt="mail">
+                    Send
+                </button>
             </form>
         </div>
     </div>
