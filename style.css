@@ -12,7 +12,7 @@
 body {
     margin: 0px;
     width: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
     background: linear-gradient(90deg, rgba(12, 11, 11), rgba(4, 126, 4));
     align-content: center;
@@ -44,7 +44,7 @@ h1 {
 .Name {
     margin: 5px;
     font-size: 2em;
-    background: linear-gradient(90deg, rgb(3, 114, 21), rgb(17, 12, 12));
+    background: linear-gradient(90deg, #033E4E, #00181E);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -273,7 +273,7 @@ form {
     bottom: 0px;
     right: 0px;
     left: 0px;
-    background: linear-gradient(transparent 0%, rgba(26, 48, 26, 0.9) 30%, rgba(26, 48, 26, 0.9) 70%, transparent 100%);
+    background: linear-gradient(transparent 0%, #00181E 30%, #012B36 70%, transparent 100%);
     transform: skewY(25deg);
 
 }
@@ -283,7 +283,7 @@ form {
 }
 
 .logo-2 {
-    width: 100%;
+    width: 100px;
     height: auto;
 }
 .logo-3 {
@@ -296,7 +296,7 @@ form {
 /* NAV BAR */
 #bottom-nav {
     height: 60px;
-    background: linear-gradient(rgb(3, 31, 7, 0.5) 0%, rgb(3, 31, 7) 10%, rgb(250,250,250) 50%, rgb(3, 31, 7)) 90%, rgb(3, 31, 7, 0.5) 100%;
+    background: linear-gradient(rgba(31, 20, 3, 0.5) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(31, 20, 3, 0.5) 100%);
     overflow: hidden;
     position: fixed;
     bottom: 0;
