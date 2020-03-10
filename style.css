@@ -24,6 +24,17 @@
         opacity: 1;
     }
 }
+
+@keyframes walk-cycle {
+    0% {
+        left: -50%;
+        background-position: 0px;
+    }
+    100% {
+        left: 110%;
+        background-position: -8192px;
+    }
+}
 .slide-anim-l {
     animation-name: slide-l;
     animation-duration: 1.5s;
@@ -47,7 +58,6 @@ body {
     width: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1em;
-    /* background: linear-gradient(90deg, rgba(12, 11, 11), rgba(4, 126, 4)); */
     align-content: center;
 }
 
@@ -76,6 +86,19 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.cougar-anim {
+    position: fixed;
+    transform: scale(0.7);
+    z-index: 0;
+    margin: 0 auto;
+    width: 512px;
+    height: 256px;
+    background: url(images/cougar-sprite-sheet.png);
+    -webkit-animation: walk-cycle 1.9s steps(16) infinite;
+	-o-animation: walk-cycle 1.9s steps(16) infinite;
+	animation: walk-cycle 1.9s steps(16) infinite;
 }
 
 /* About Me Page */
