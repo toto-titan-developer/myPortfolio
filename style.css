@@ -103,9 +103,9 @@ h1 {
     transform: scale(0.7);
     z-index: 0;
     margin: 0 auto;
-    -webkit-animation: moving-cycle 3.7s ease-in-out infinite;
-	-o-animation: moving-cycle 3.7s ease-in-out infinite;
-	animation: moving-cycle 3.7s ease-in-out infinite;
+    -webkit-animation: moving-cycle 4.5s ease-in-out infinite;
+	-o-animation: moving-cycle 4.5s ease-in-out infinite;
+	animation: moving-cycle 4.5s ease-in-out infinite;
 }
 .cougar-anim {
     width: 512px;
@@ -177,9 +177,13 @@ h1 {
                 linear-gradient(-45deg, #033E4E 0%, #00181E 100%);
     padding: 3px;
     justify-self: center;
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 20px;
+    transition: 1s;
+}
+.about-image:hover {
+    transform: scale(2);
 }
 
 
