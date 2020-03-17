@@ -9,19 +9,20 @@
     <div class="bkg-st"></div>
     <div id="form-align" class="fade-in">
         <div id="form-bg" class="slide-anim-r">
-            <form action="contact.php" method="POST" enctype="multipart/form-data" name="EmailTetsForm">
+            <form name="contact" method="POST" data-netlify="true">
                 Email: <br>
-                <input type="email" name="VisitorEmail" placeholder="Enter Your Email"> <br>
+                <input type="email" name="email" placeholder="Enter Your Email"> <br>
                 Name: <br>
-                <input type="text" name="VisitorName" placeholder="Enter Your Name" required> <br>
+                <input type="text" name="name" placeholder="Enter Your Name" required> <br>
                 Reason for Contacting: <br>
-                <select name="ContactReason" class="reasons" required>
+                <select name="role[]" class="reasons" required>
                     <option value="Job Offer">Job Offer</option>
                     <option value="Project Proposal">Project Proposal</option>
                     <option value="Other">Other</option>
                 </select> <br>
                 Your Message: <br>
-                <textarea name="VisitorMessage" class="message" placeholder="Your Message"></textarea> <br>
+                <textarea name="message" class="message" placeholder="Your Message"></textarea> <br>
+                <div data-netlify-recaptcha="true"></div> <br>
                 <button type="submit" class="submit">
                     <img class="logo" src="images/mail_icon2.png" alt="mail">
                     Send
