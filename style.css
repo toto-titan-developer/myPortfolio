@@ -77,14 +77,27 @@ body {
     justify-content: center;
 }
 .title {
-    display: flex;
-    margin: 20vh 0px;
-    padding: 40px;
-    background: linear-gradient(-90deg, rgba(36, 41, 36, 0.4), rgba(1, 122, 1, 0.4));
-    border-radius: 50px;
+    margin-top: 10vh;
+    padding: 10vh 5vh 0 5vh;
+    height: 200px;
     align-items: center;
     justify-content: center;
 }
+.title > a {
+    text-decoration: none;
+}
+.vmp-bg {
+    text-align: center;
+    color: blanchedalmond;
+    margin: 20vh 10px;
+    background: linear-gradient(-90deg, rgba(36, 41, 36, 0.4), rgba(1, 122, 1, 0.4));
+    border: 3px solid bisque;
+    border-radius: 3px;
+}
+.vmp-bg > p {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 1.5em;
 }
@@ -146,7 +159,7 @@ h1 {
     justify-items: center;
     margin: 25px 20px;
     padding: 20px 20px;
-    margin-bottom: 100px;
+    margin-bottom: 15vh;
     width: 75vw;
     background-color: rgba(0, 12, 0, 0.5);
     border-radius: 20px;
@@ -191,16 +204,20 @@ h1 {
 
 #form-align {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
-    height: 100vh;
+}
+
+.form-box {
+    display: grid;
+    width: 70%;
+    justify-self: center;
+    flex-direction: column;
 }
 
 #form-bg {
-    display: grid;
+    height: 1000px;
+    top: 0;
     align-self: center;
-    justify-self: center;
     font-size: 1.2em;
     padding: 50px;
     width: 75vw;
@@ -212,21 +229,19 @@ h1 {
 input {
     background-color: rgba(35, 66, 3, 0.637);
     color: cornsilk;
-    text-align: center;
+    justify-self: center;
     border: 3px solid cornsilk;
     border-radius: 5px;
     padding: 4px 4px;
-    margin: 5px 0px;
-    width: 40%;
+    width: 40%; 
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: inherit;
-    height: 80vh;
+    display: grid;
+    height: 1000px;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: 100%;
+    /* height: inherit; */
     padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -244,21 +259,21 @@ form {
 
 .message {
     background-color: rgba(35, 66, 3, 0.637);
-    padding: 5px;
     border-radius: 5px;
     color: cornsilk;
     text-align: start;
-    width: 60%;
+    width: 90%;
     height: 300px;
 }
 
 .submit {
-    width: 75px;
+    width: 100px;
     height: 60px;
     background-color: rgba(53, 100, 5, 0.637);
     color: blanchedalmond;
     border: 3px solid white;
     border-radius: 40px;
+    margin: 40px;
     transition: 0.5s;
 }
 .submit:hover {
@@ -365,28 +380,43 @@ form {
 
 /* NAV BAR */
 #bottom-nav {
-    height: 60px;
-    background: linear-gradient(rgba(31, 20, 3, 0.5) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(31, 20, 3, 0.5) 100%);
+    height: 12vh;
+    background: linear-gradient(rgba(31, 20, 3, 0.9) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(31, 20, 3, 0.9) 100%);
     overflow: hidden;
     position: fixed;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
+    justify-content: center;
+    align-content: center;
 }
 #bottom-nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto 17.5vw 17.5vw 17.5vw 17.5vw auto;
+    grid-template-rows: 1;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 #bottom-nav-links > li  {
-    margin: 5px 10%;
     list-style: none;
+    align-self: center;
+    justify-self: center;
 }
 #links {
     text-decoration: none;
-    padding: 10px;
+    padding: 1.75vh 5vw;
+    margin: 2.5vh 5vw;
     color: blanchedalmond;
     background-color: rgba(0, 0, 0, 0.822);
-    border-radius: 20px;
+    border-radius: 50px;
+}
+#active {
+    text-decoration: none;
+    padding: 1.75vh 5vw;
+    margin: 2.5vh 5vw;
+    border-radius: 50px;
+    background-color: black;
+    color: green;
 }
 #links:hover {
     background-color: black;

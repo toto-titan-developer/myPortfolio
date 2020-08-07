@@ -9,20 +9,30 @@
     <div class="bkg-st"></div>
     <div id="form-align" class="fade-in">
         <div id="form-bg" class="slide-anim-r">
-            <form name="contact" method="POST" data-netlify="true">
-                Email: <br>
-                <input type="email" name="email" placeholder="Enter Your Email"> <br>
-                Name: <br>
-                <input type="text" name="name" placeholder="Enter Your Name" required> <br>
-                Reason for Contacting: <br>
-                <select name="role[]" class="reasons" required>
-                    <option value="Job Offer">Job Offer</option>
-                    <option value="Project Proposal">Project Proposal</option>
-                    <option value="Other">Other</option>
-                </select> <br>
-                Your Message: <br>
-                <textarea name="message" class="message" placeholder="Your Message"></textarea> <br>
-                <div data-netlify-recaptcha="true"></div> <br>
+            <form class="form-grid" name="contact" method="POST" data-netlify="true">
+                <div class="form-box">
+                    Email: <br>
+                    <input type="email" name="email" placeholder="Enter Your Email"> <br>
+                </div>
+                <div class="form-box">
+                    Name: <br>
+                    <input type="text" name="name" placeholder="Enter Your Name" required> <br>
+                </div>
+                <div class="form-box">
+                    Reason for Contacting: <br>
+                    <select name="role[]" class="reasons" required>
+                        <option value="Job Offer">Job Offer</option>
+                        <option value="Project Proposal">Project Proposal</option>
+                        <option value="Other">Other</option>
+                    </select> <br>
+                </div>
+                <div class="form-box">
+                    Your Message: <br>
+                    <textarea name="message" class="message" placeholder="Your Message"></textarea> <br>
+                </div>
+                
+                <div  class="form-box" data-netlify-recaptcha="true"></div> <br>
+
                 <button type="submit" class="submit">
                     <img class="logo" src="images/mail_icon2.png" alt="mail">
                     Send
@@ -33,9 +43,11 @@
 
     <nav id="bottom-nav">
         <ul id="bottom-nav-links">
+            <li></li>
             <li><a id="links" href="index.html">Home</a></li>
             <li><a id="links" href="about.html">About</a></li>
             <li><a id="links" href="projects.html">Projects</a></li>
+            <li><a id="active" href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
