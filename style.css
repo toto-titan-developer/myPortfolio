@@ -96,10 +96,12 @@ body {
 }
 .vmp-bg > p {
     text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 .Name {
     margin: 5px;
@@ -110,7 +112,7 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-.cougar-moving {
+/* .cougar-moving {
     position: fixed;
     bottom: 50px;
     transform: scale(0.7);
@@ -127,7 +129,7 @@ h1 {
     -webkit-animation: walk-cycle 1.9s steps(16) infinite;
 	-o-animation: walk-cycle 1.9s steps(16) infinite;
 	animation: walk-cycle 1.9s steps(16) infinite;
-}
+} */
 
 /* About Me Page */
 
@@ -403,17 +405,20 @@ form {
     justify-self: center;
 }
 #links {
+    font-size: 1.2em;
     text-decoration: none;
     padding: 1.75vh 5vw;
     margin: 2.5vh 5vw;
     color: blanchedalmond;
     background-color: rgba(0, 0, 0, 0.822);
     border-radius: 50px;
+    margin: 0;
 }
 #active {
+    font-size: 1.2em;
     text-decoration: none;
     padding: 1.75vh 5vw;
-    margin: 2.5vh 5vw;
+    margin: 0;
     border-radius: 50px;
     background-color: black;
     color: green;
