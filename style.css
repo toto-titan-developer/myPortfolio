@@ -99,6 +99,9 @@ body {
     font-size: 1.3em;
     font-weight: 700;
 }
+.vmp-bg:hover {
+    background: linear-gradient(-90deg, rgba(36, 41, 36, 0.4), rgba(1, 122, 1, 0.1));
+}
 
 h1 {
     font-size: 1.7em;
@@ -205,46 +208,40 @@ h1 {
 /* Contact Page */
 
 #form-align {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin-bottom: 100px;
 }
 
 .form-box {
-    display: grid;
-    width: 70%;
+    display: flex;
+    align-items: center;
     justify-self: center;
+    width: 100%;
     flex-direction: column;
 }
 
 #form-bg {
-    height: 1000px;
-    top: 0;
-    align-self: center;
     font-size: 1.2em;
-    padding: 50px;
-    width: 75vw;
     border-radius: 10px;
-    background: linear-gradient(-90deg, rgba(5, 12, 0, 0.6), rgba(28, 34, 29, 0.6));
     color: azure;
 }
 
 input {
+    text-align: center;
     background-color: rgba(35, 66, 3, 0.637);
     color: cornsilk;
-    justify-self: center;
     border: 3px solid cornsilk;
     border-radius: 5px;
-    padding: 4px 4px;
-    width: 40%; 
+    padding: 8px 4px;
+    width: 60%; 
 }
 
 form {
     display: grid;
-    height: 1000px;
-    grid-template-rows: auto auto auto auto auto auto;
+    /* height: 90vh; */
+    align-content: center;
+    grid-template-rows: 85px 85px 87px 160px 85px 70px 500px;
     grid-template-columns: 100%;
-    /* height: inherit; */
-    padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
@@ -254,9 +251,8 @@ form {
     color: cornsilk;
     border: 3px solid cornsilk;
     border-radius: 5px;
-    padding: 4px 4px;
-    margin: 5px 0px;
-    width: 40%;
+    padding: 8px 4px;
+    width: 60%;
 }
 
 .message {
@@ -264,18 +260,17 @@ form {
     border-radius: 5px;
     color: cornsilk;
     text-align: start;
-    width: 90%;
-    height: 300px;
+    width: 60%;
+    height: 150px;
 }
 
 .submit {
-    width: 100px;
-    height: 60px;
+    width: 150px;
+    height: 70px;
     background-color: rgba(53, 100, 5, 0.637);
     color: blanchedalmond;
     border: 3px solid white;
     border-radius: 40px;
-    margin: 40px;
     transition: 0.5s;
 }
 .submit:hover {
@@ -384,7 +379,7 @@ form {
 #bottom-nav {
     height: 12vh;
     background: linear-gradient(rgba(31, 20, 3, 0.9) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(31, 20, 3, 0.9) 100%);
-    overflow: hidden;
+    overflow: visible;
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -403,21 +398,29 @@ form {
     list-style: none;
     align-self: center;
     justify-self: center;
+    /* background-color: rgba(102, 39, 39, 0.822); */
+}
+#bottom-nav-links > li > a {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
 }
 #links {
-    font-size: 1.2em;
+    font-size: 1.25em;
     text-decoration: none;
-    padding: 1.75vh 5vw;
-    margin: 2.5vh 5vw;
+    padding: 1vh 1vw;
+    margin: 0;
     color: blanchedalmond;
     background-color: rgba(0, 0, 0, 0.822);
     border-radius: 50px;
     margin: 0;
 }
 #active {
-    font-size: 1.2em;
+    font-size: 1.25em;
     text-decoration: none;
-    padding: 1.75vh 5vw;
+    padding: 1vh 1vw;
     margin: 0;
     border-radius: 50px;
     background-color: black;
