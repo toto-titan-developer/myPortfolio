@@ -77,27 +77,31 @@ body {
     justify-content: center;
 }
 .title {
-    margin-top: 10vh;
+    margin-top: 20vh;
     padding: 10vh 5vh 0 5vh;
     height: 200px;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (orientation: landscape) {
+    .title {
+        margin-top: 7vh;
+    }
 }
 .title > a {
     text-decoration: none;
 }
 .vmp-bg {
     text-align: center;
-    color: blanchedalmond;
-    margin: 20vh 10px;
-    background: linear-gradient(-90deg, rgba(36, 41, 36, 0.4), rgba(1, 122, 1, 0.4));
-    border: 3px solid bisque;
+    color: rgb(1, 17, 7);
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.4), rgba(138, 138, 138, 0.4));
+    border: 3px solid rgb(1, 17, 7);
     border-radius: 3px;
 }
 .vmp-bg > p {
     text-decoration: none;
-    font-size: 1.3em;
-    font-weight: 700;
+    font-size: 1.4em;
+    font-weight: 800;
 }
 .vmp-bg:hover {
     background: linear-gradient(-90deg, rgba(36, 41, 36, 0.4), rgba(1, 122, 1, 0.1));
@@ -107,8 +111,8 @@ h1 {
     font-size: 1.7em;
 }
 .Name {
-    margin: 5px;
-    font-size: 2.1em;
+    margin: 5px 5px 5px 10px;
+    font-size: 2.0em;
     background: linear-gradient(90deg, #033E4E, #00181E);
     -webkit-background-clip: text;
     background-clip: text;
@@ -151,11 +155,31 @@ h1 {
     background: linear-gradient(65deg, #033E4E 0%, #00181E 100%),
                 linear-gradient(-65deg, #033E4E 0%, #00181E 100%);
     padding: 5px;
-    height: 200px;
-    width: 300px;
+    height: 267px;
+    width: 400px;
     margin: 20px;
     border-radius: 20px;
 }
+.resume-bg {
+    text-align: center;
+    text-shadow: -2px -2px rgb(1, 29, 1), 2px -2px rgb(1, 29, 1),-2px 2px rgb(1, 29, 1), 2px 2px rgb(1, 29, 1);
+    display: flex;
+    border: 5px double blanchedalmond;
+    border-radius: 10px;
+    height: 35px;
+    width: 200px;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.resume-bg > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: blanchedalmond;
+    
+}
+
 .profile_about {
     display: grid;
     grid-template-columns: 25% auto 25%;
@@ -174,7 +198,7 @@ h1 {
     margin: 20px 50px;
     padding: 20px;
     color: white;
-    font-size: 0.7em;
+    font-size: 1em;
     border-radius: 10PX;
 }
 .info1 {
@@ -247,7 +271,7 @@ form {
     display: grid;
     height: 1600px;
     align-content: center;
-    grid-template-rows: auto 110px 110px 112px 200px 85px 70px 100px auto;
+    grid-template-rows: auto 110px 110px 112px 300px 85px 70px 100px auto;
     grid-template-columns: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -256,7 +280,7 @@ form {
 @media only screen and (orientation: landscape){
     form {
         height: 900px;
-        grid-template-rows: auto 85px 85px 87px 160px 85px 70px 100px auto;
+        grid-template-rows: auto 85px 85px 87px 200px 85px 70px 100px auto;
     }
     input {
         font-size: 0.6em;
@@ -404,9 +428,10 @@ form {
 
 
 /* NAV BAR */
+
 #bottom-nav {
-    height: 12vh;
-    background: linear-gradient(rgba(31, 20, 3, 0.9) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(31, 20, 3, 0.9) 100%);
+    height: 80px;
+    background: linear-gradient(rgba(177, 223, 230, 0.9) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(177, 223, 230, 0.9) 100%);
     overflow: visible;
     position: fixed;
     bottom: 0px;
@@ -416,7 +441,7 @@ form {
 }
 #bottom-nav-links {
     display: grid;
-    grid-template-columns: auto 17.5vw 17.5vw 17.5vw 17.5vw auto;
+    grid-template-columns: auto 20vw 20vw 20vw 20vw auto;
     grid-template-rows: 1;
     height: 100%;
     margin: 0;
@@ -432,7 +457,7 @@ form {
     display: block;
     text-align: center;
     justify-content: center;
-    width: 120px;
+    width: 140px;
     height: 30px;
 }
 #links {
