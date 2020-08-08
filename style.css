@@ -253,7 +253,7 @@ form {
     border-radius: 10px;
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 700px){
     form {
         height: 900px;
     }
