@@ -209,10 +209,10 @@ h1 {
 
 #form-align {
     display: block;
-    margin-bottom: 100px;
 }
 
 .form-box {
+    font-size: 1em;
     display: flex;
     align-items: center;
     justify-self: center;
@@ -227,41 +227,57 @@ h1 {
 }
 
 input {
-    text-align: center;
+    font-size: 0.8em;
     background-color: rgba(35, 66, 3, 0.637);
     color: cornsilk;
     border: 3px solid cornsilk;
-    border-radius: 5px;
-    padding: 8px 4px;
+    border-radius: 20px;
+    padding: 15px 30px;
     width: 60%; 
+}
+
+select {
+    font-size: 0.8em;
+}
+textarea {
+    font-size: 0.8em;
 }
 
 form {
     display: grid;
-    /* height: 90vh; */
+    height: 1600px;
     align-content: center;
-    grid-template-rows: 85px 85px 87px 160px 85px 70px 500px;
+    grid-template-rows: auto 85px 85px 87px 160px 85px 70px 100px auto;
     grid-template-columns: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
 
+@media only screen and (min-width: 800px){
+    form {
+        height: 900px;
+    }
+}
+
 .reasons {
     background-color: rgba(35, 66, 3, 0.637);
+    text-align: center;
     color: cornsilk;
     border: 3px solid cornsilk;
-    border-radius: 5px;
-    padding: 8px 4px;
+    border-radius: 30px;
+    padding: 15px 10px;
     width: 60%;
 }
 
 .message {
     background-color: rgba(35, 66, 3, 0.637);
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 3px solid cornsilk;
     color: cornsilk;
     text-align: start;
     width: 60%;
-    height: 150px;
+    height: 200px;
+    padding: 15px 10px;
 }
 
 .submit {
