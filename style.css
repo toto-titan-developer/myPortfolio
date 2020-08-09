@@ -171,8 +171,7 @@ h1 {
 }
 .resume-bg {
     text-align: center;
-    text-shadow: -2px -2px rgb(1, 29, 1), 2px -2px rgb(1, 29, 1),-2px 2px rgb(1, 29, 1), 2px 2px rgb(1, 29, 1);
-    display: flex;
+    text-shadow: -2px -2px rgb(1, 29, 1), 2px -2px rgb(1, 29, 1),-2px 2px rgb(1, 29, 1), 2px 2px rgb(1, 29, 1); 
     border: 5px double blanchedalmond;
     border-radius: 10px;
     height: 35px;
@@ -180,6 +179,7 @@ h1 {
     font-size: 1.5em;
     font-weight: 900;
     transition: 0.5s;
+    margin-bottom: 150px;
 }
 .resume-bg:hover {
     background: linear-gradient(-90deg, rgba(36, 41, 36, 0.4), rgba(1, 122, 1, 0.1));
@@ -251,7 +251,6 @@ h1 {
 }
 
 .form-box {
-    font-size: 1em;
     display: flex;
     align-items: center;
     justify-self: center;
@@ -266,7 +265,6 @@ h1 {
 }
 
 input {
-    font-size: 0.95em;
     background-color: rgba(35, 66, 3, 0.637);
     color: cornsilk;
     border: 3px solid cornsilk;
@@ -275,14 +273,8 @@ input {
     width: 60%; 
 }
 
-select {
-    font-size: 0.8em;
-}
-textarea {
-    font-size: 0.8em;
-}
-
 form {
+    font-size: 0.8em;
     display: grid;
     height: 1600px;
     align-content: center;
@@ -298,7 +290,6 @@ form {
         grid-template-rows: auto 85px 85px 87px 200px 85px 70px 100px auto;
     }
     input {
-        font-size: 0.6em;
         width: 40%;
         padding: 10px 30px;
     }
@@ -321,6 +312,7 @@ form {
 }
 
 .message {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgba(35, 66, 3, 0.637);
     border-radius: 10px;
     border: 3px solid cornsilk;
@@ -417,7 +409,7 @@ form {
 
 /*Background Styling*/
 .bkg-st {
-    background-image: url("images/Landscape_Image.jpg");
+    /* Original background-image: url("images/Landscape_Image.jpg"); */
     position: fixed;
     z-index: -10;
     height: 100%;
@@ -426,6 +418,19 @@ form {
     background-repeat: no-repeat;
     background-position: center;
 }
+.bkg_1 {
+    background-image: url("images/Lanscape_Wilcox_PinkSky.JPG");
+}
+.bkg_2 {
+    background-image: url("images/Lanscape_Wilcox_Fire.JPG");
+}
+.bkg_3 {
+    background-image: url("images/Lanscape_Wilcox_Reflextion2.JPG");
+}
+.bkg_4 {
+    background-image: url("images/Lanscape_Wilcox_Reflextion.JPG");
+}
+
 .logo {
     width: 20px;
     height: auto;
@@ -444,16 +449,108 @@ form {
 
 /* NAV BAR */
 
-#bottom-nav {
+.bottom-nav {
     height: 80px;
-    background: linear-gradient(rgba(177, 223, 230, 0.9) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(177, 223, 230, 0.9) 100%);
-    overflow: visible;
+    /* background: linear-gradient(rgb(20, 20, 20, 0.8) 10%, rgb(26, 26, 26) 40%, rgb(32, 32, 32) 50%, rgb(26, 26, 26) 60%, rgb(20, 20, 20, 0.8) 90%); */
+    overflow: hidden;
     position: fixed;
     bottom: 0px;
     width: 100%;
     justify-content: center;
     align-content: center;
 }
+.nav-BG_1 {
+    background: linear-gradient(rgba(177, 223, 230, 0.9) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(177, 223, 230, 0.9) 100%);
+}
+.nav-BG_2 {
+    background: linear-gradient(45deg, rgb(0, 2, 22) 0%, rgba(65, 255, 106, 0.63) 1%, rgb(200, 255, 191) 30%, rgb(177, 175, 253) 70%, rgba(65, 84, 255, 0.63) 99%, rgb(0, 2, 22) 100%);
+}
+.nav-BG_3 {
+    background: linear-gradient(rgb(20, 20, 20, 0.8) 10%, rgb(26, 26, 26) 40%, rgb(32, 32, 32) 50%, rgb(26, 26, 26) 60%, rgb(20, 20, 20, 0.8) 90%);
+}
+.nav-BG_4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.9) 10%,
+                                rgba(100, 100, 100, 0.7) 15%,
+                                rgb(30, 30, 30, 0.8) 20%,
+                                rgb(100, 100, 100, 0.7) 25%,
+                                rgb(30, 30, 30, 0.8) 30%,
+                                rgb(100, 100, 100, 0.7) 35%,
+                                rgb(26, 26, 26, 0.5) 40%,
+                                rgb(32, 32, 32, 0.5) 50%, 
+                                rgb(26, 26, 26, 0.5) 60%,
+                                rgba(100, 100, 100, 0.7) 65%,
+                                rgb(30, 30, 30, 0.8) 70%,
+                                rgb(100, 100, 100, 0.7) 75%,
+                                rgb(30, 30, 30, 0.8) 80%,
+                                rgb(100, 100, 100, 0.7) 85%,
+                                rgba(0, 0, 0, 0.9) 90%),
+                linear-gradient(-15deg, rgba(0, 0, 0) 10%,
+                                rgba(100, 100, 100) 15%,
+                                rgb(30, 30, 30) 20%,
+                                rgb(100, 100, 100) 25%,
+                                rgb(30, 30, 30) 30%,
+                                rgb(100, 100, 100) 35%,
+                                rgb(26, 26, 26) 40%,
+                                rgb(0, 0, 0) 50%, 
+                                rgb(26, 26, 26) 60%,
+                                rgba(100, 100, 100) 65%,
+                                rgb(30, 30, 30) 70%,
+                                rgb(100, 100, 100) 75%,
+                                rgb(30, 30, 30) 80%,
+                                rgb(100, 100, 100) 85%,
+                                rgba(0, 0, 0) 90%);
+}
+.nav-BG_5 {
+    background: repeating-linear-gradient(-35deg, rgba(1, 78, 5, 0.7), rgba(2, 41, 66, 0.7),rgba(11, 75, 11, 0.7)  50% );
+}
+/* BackGround Testing */
+/*
+Original
+background: linear-gradient(rgba(177, 223, 230, 0.9) 0%, #00181E 10%, rgb(250,250,250) 50%, #00181E 90%, rgba(177, 223, 230, 0.9) 100%);
+
+Green to blue Slightly Translucent
+background: linear-gradient(45deg, rgb(0, 2, 22) 0%, rgba(65, 255, 106, 0.63) 1%, rgb(200, 255, 191) 30%, rgb(177, 175, 253) 70%, rgba(65, 84, 255, 0.63) 99%, rgb(0, 2, 22) 100%);
+
+Dark Grey Slightly Transparent
+background: linear-gradient(rgb(20, 20, 20, 0.8) 10%, rgb(26, 26, 26) 40%, rgb(32, 32, 32) 50%, rgb(26, 26, 26) 60%, rgb(20, 20, 20, 0.8) 90%);
+
+Grey Stripped
+background: linear-gradient(rgba(0, 0, 0, 0.9) 10%,
+                                rgba(100, 100, 100, 0.7) 15%,
+                                rgb(30, 30, 30, 0.8) 20%,
+                                rgb(100, 100, 100, 0.7) 25%,
+                                rgb(30, 30, 30, 0.8) 30%,
+                                rgb(100, 100, 100, 0.7) 35%,
+                                rgb(26, 26, 26, 0.5) 40%,
+                                rgb(32, 32, 32, 0.5) 50%, 
+                                rgb(26, 26, 26, 0.5) 60%,
+                                rgba(100, 100, 100, 0.7) 65%,
+                                rgb(30, 30, 30, 0.8) 70%,
+                                rgb(100, 100, 100, 0.7) 75%,
+                                rgb(30, 30, 30, 0.8) 80%,
+                                rgb(100, 100, 100, 0.7) 85%,
+                                rgba(0, 0, 0, 0.9) 90%),
+                linear-gradient(-15deg, rgba(0, 0, 0) 10%,
+                                rgba(100, 100, 100) 15%,
+                                rgb(30, 30, 30) 20%,
+                                rgb(100, 100, 100) 25%,
+                                rgb(30, 30, 30) 30%,
+                                rgb(100, 100, 100) 35%,
+                                rgb(26, 26, 26) 40%,
+                                rgb(0, 0, 0) 50%, 
+                                rgb(26, 26, 26) 60%,
+                                rgba(100, 100, 100) 65%,
+                                rgb(30, 30, 30) 70%,
+                                rgb(100, 100, 100) 75%,
+                                rgb(30, 30, 30) 80%,
+                                rgb(100, 100, 100) 85%,
+                                rgba(0, 0, 0) 90%);
+
+
+Fading back and forth between blue and green 
+background: repeating-linear-gradient(-35deg, rgba(1, 78, 5, 0.7), rgba(2, 41, 66, 0.7),rgba(11, 75, 11, 0.7)  50% );
+
+*/
 #bottom-nav-links {
     display: grid;
     grid-template-columns: auto 20vw 20vw 20vw 20vw auto;
@@ -466,7 +563,6 @@ form {
     list-style: none;
     align-self: center;
     justify-self: center;
-    /* background-color: rgba(102, 39, 39, 0.822); */
 }
 #bottom-nav-links > li > a {
     display: block;
