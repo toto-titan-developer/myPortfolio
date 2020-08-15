@@ -201,14 +201,14 @@ h1 {
 
 .profile_about {
     display: grid;
-    grid-template-columns: 25% auto 25%;
+    grid-template-columns: 25% auto 33%;
     gap: 10px 5px;
     align-items: center;
     justify-items: center;
     margin: 25px 20px;
     padding: 20px 20px;
     margin-bottom: 15vh;
-    width: 75vw;
+    width: 90vw;
     background-color: rgba(0, 12, 0, 0.5);
     border-radius: 20px;
 }
@@ -217,7 +217,7 @@ h1 {
     margin: 20px 50px;
     padding: 20px;
     color: white;
-    font-size: 1em;
+    font-size: 0.6em;
     border-radius: 10PX;
 }
 .info1 {
@@ -244,7 +244,16 @@ h1 {
     transition: 1s;
 }
 .about-image:hover {
-    transform: scale(2);
+    transform: scale(1.5);
+}
+
+@media only screen and (orientation: landscape){
+    .profile_about{
+        grid-template-columns: 25% auto 20%;
+    }
+    .about{
+        font-size: 0.85em;
+    }
 }
 
 
