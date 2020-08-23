@@ -435,7 +435,10 @@ form {
 
 /*Background Styling*/
 .bkg-st {
+    display: block;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: -10;
     height: 100%;
     width: 100%;
