@@ -103,7 +103,7 @@ body {
 .vmp-bg > a {
     text-decoration: none;
     background: linear-gradient(-90deg, rgba(255, 255, 255, 0.4), rgba(138, 138, 138, 0.4));
-    border: 3px solid rgb(1, 17, 7);
+    border: 3px solid #033E4E;
     border-radius: 3px;
     display: block;
     padding: 15px 50px;
@@ -114,7 +114,7 @@ body {
     font-weight: 800;
 }
 .vmp-bg:hover {
-    background: linear-gradient(-90deg, rgba(36, 41, 36, 0.4), rgba(1, 122, 1, 0.1));
+    background: linear-gradient(-90deg, rgba(37, 36, 41, 0.4), #03425342);
     transform: scale(1.1, 1.1);
 }
 
@@ -194,7 +194,7 @@ h1 {
     /* margin-bottom: 150px; */
 }
 .resume-bg:hover {
-    background: linear-gradient(-90deg, rgba(36, 41, 36, 0.4), rgba(1, 122, 1, 0.1));
+    background: linear-gradient(-90deg, rgba(37, 36, 41, 0.7), #03144e96);
     border-color: black;
     transform: scale(1.1, 1.1);
 }
@@ -217,12 +217,10 @@ h1 {
     padding: 20px 20px;
     margin-bottom: 15vh;
     width: 95vw;
-    /* background-color: rgba(0, 12, 0, 0.5); */
     border-radius: 20px;
 }
 .about {
     background: linear-gradient(90deg, rgba(0, 24, 30, 0.6) 0%, rgba(1, 43, 54, 0.6) 100%);
-    /* margin: 20px 50px; */
     padding: 20px;
     color: white;
     font-size: 0.6em;
@@ -289,7 +287,7 @@ h1 {
 }
 
 input {
-    background-color: rgba(35, 66, 3, 0.637);
+    background-color: #033E4E;
     color: cornsilk;
     border: 3px solid cornsilk;
     border-radius: 20px;
@@ -326,7 +324,7 @@ form {
 }
 
 .reasons {
-    background-color: rgba(35, 66, 3, 0.637);
+    background-color: #033E4E;
     text-align: center;
     color: cornsilk;
     border: 3px solid cornsilk;
@@ -337,7 +335,7 @@ form {
 
 .message {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgba(35, 66, 3, 0.637);
+    background-color: #033E4E;
     border-radius: 10px;
     border: 3px solid cornsilk;
     color: cornsilk;
@@ -350,7 +348,7 @@ form {
 .submit {
     width: 150px;
     height: 70px;
-    background-color: rgba(53, 100, 5, 0.637);
+    background-color: #03144e;
     color: blanchedalmond;
     border: 3px solid white;
     border-radius: 40px;
@@ -360,7 +358,7 @@ form {
     cursor: pointer;
     border-color: black;
     transform: scale(1.1, 1.1);
-    background-color: rgba(64, 124, 4, 0.637);
+    background-color: #020d31;
 }
 
 /* Projetcs Page*/
@@ -398,7 +396,7 @@ form {
     width: 85%;
     margin: 50px 0px;
     padding: 20px 0px;
-    background: linear-gradient(90deg, rgba(12, 11, 11, 0.5), rgba(4, 126, 4, 0.5));
+    background: linear-gradient(90deg, rgba(0, 24, 30, 0.6) 0%, rgba(1, 43, 54, 0.8) 100%);
 
 }
 .project-info {
@@ -523,9 +521,9 @@ form {
     margin: 0;
     border-radius: 50px;
     background-color: black;
-    color: green;
+    color: #033E4E;
 }
 #links:hover {
     background-color: black;
-    color: green;
+    color: #033E4E;
 }
