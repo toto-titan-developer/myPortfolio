@@ -446,7 +446,7 @@ form {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 }
