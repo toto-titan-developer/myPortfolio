@@ -209,7 +209,7 @@ h1 {
 
 .profile_about {
     display: grid;
-    grid-template-columns: 25% auto 33%;
+    grid-template-columns: auto 25% auto;
     gap: 10px 5px;
     align-items: center;
     justify-items: center;
@@ -223,7 +223,7 @@ h1 {
     background: linear-gradient(90deg, rgba(0, 24, 30, 0.6) 0%, rgba(1, 43, 54, 0.6) 100%);
     padding: 20px;
     color: white;
-    font-size: 0.6em;
+    font-size: 0.75em;
     border-radius: 10PX;
 }
 .info {
@@ -348,7 +348,7 @@ form {
 .submit {
     width: 150px;
     height: 70px;
-    background-color: #03144e;
+    background-color: #869dfc;
     color: blanchedalmond;
     border: 3px solid white;
     border-radius: 40px;
