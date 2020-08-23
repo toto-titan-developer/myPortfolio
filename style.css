@@ -256,7 +256,7 @@ h1 {
 
 @media only screen and (orientation: landscape){
     .profile_about{
-        grid-template-columns: 25% auto 20%;
+        grid-template-columns: 25% auto 25%;
     }
     .about{
         font-size: 0.85em;
