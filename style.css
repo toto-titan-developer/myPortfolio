@@ -92,16 +92,22 @@ body {
     text-decoration: none;
 }
 .vmp-bg {
+    display: flex;
     text-align: center;
+    justify-content: center;
     margin-top: 5vh;
-    color: rgb(1, 17, 7);
+    transition: 0.5s;
+}
+.vmp-bg > a {
+    text-decoration: none;
     background: linear-gradient(-90deg, rgba(255, 255, 255, 0.4), rgba(138, 138, 138, 0.4));
     border: 3px solid rgb(1, 17, 7);
     border-radius: 3px;
-    transition: 0.5s;
-}
-.vmp-bg > p {
-    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    height: 100%;
+    width: 100%;
+    color: rgb(1, 17, 7);
     font-size: 1.4em;
     font-weight: 800;
 }
