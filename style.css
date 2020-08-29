@@ -25,24 +25,6 @@
     }
 }
 
-@keyframes walk-cycle {
-    0% {
-        /* left: -50%; */
-        background-position: 0px;
-    }
-    100% {
-        /* left: 110%; */
-        background-position: -8192px;
-    }
-}
-@keyframes moving-cycle {
-    0% {
-        left: -50%;
-    }
-    100% {
-        left: 110%;
-    }
-}
 
 .slide-anim-l {
     animation-name: slide-l;
@@ -79,17 +61,12 @@ body {
 }
 .title {
     display: grid;
-    margin-top: 15vh;
-    padding: 10vh 5vh 0 5vh;
+    margin-top: 10vh;
     height: 200px;
     align-items: center;
     justify-content: center;
 }
-@media only screen and (orientation: landscape) {
-    .title {
-        margin-top: 5vh;
-    }
-}
+
 .title > a {
     text-decoration: none;
 }
@@ -97,7 +74,7 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 10vh;
     transition: 0.5s;
 }
 .vmp-bg > a {
@@ -106,7 +83,7 @@ body {
     border: 3px solid #033E4E;
     border-radius: 3px;
     display: block;
-    padding: 15px 50px;
+    padding: 10px 35px;
     height: 100%;
     width: 100%;
     color: rgb(1, 17, 7);
@@ -119,38 +96,21 @@ body {
 }
 
 h1 {
-    font-size: 1.7em;
+    font-size: 1.2rem;
     color: blanchedalmond;
     text-shadow: -1.5px -1.5px #000, -1.5px 1.5px #000, 1.5px -1.5px #000, 1.5px 1.5px #000;
 }
 .Name {
     text-shadow: none;
-    margin: 5px 5px 5px 0px;
-    font-size: 2.0em;
+    font-size: 2.2rem;
+    margin: 0px;
+    width: 85vw;
     background: linear-gradient(90deg, #033E4E, #00181E);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* .cougar-moving {
-    position: fixed;
-    bottom: 50px;
-    transform: scale(0.7);
-    z-index: 0;
-    margin: 0 auto;
-    -webkit-animation: moving-cycle 4.5s ease-in-out infinite;
-	-o-animation: moving-cycle 4.5s ease-in-out infinite;
-	animation: moving-cycle 4.5s ease-in-out infinite;
-}
-.cougar-anim {
-    width: 512px;
-    height: 256px;
-    background: url(images/cougar-sprite-sheet.png);
-    -webkit-animation: walk-cycle 1.9s steps(16) infinite;
-	-o-animation: walk-cycle 1.9s steps(16) infinite;
-	animation: walk-cycle 1.9s steps(16) infinite;
-} */
 
 /* About Me Page */
 
@@ -168,9 +128,9 @@ h1 {
 .profile_pic {
     background: linear-gradient(65deg, #033E4E 0%, #00181E 100%),
                 linear-gradient(-65deg, #033E4E 0%, #00181E 100%);
-    padding: 5px;
-    height: 267px;
-    width: 400px;
+    padding: 2px;
+    height: auto;
+    width: 160px;
     margin: 20px;
     border-radius: 20px;
 }
@@ -191,7 +151,6 @@ h1 {
     font-size: 1.5em;
     font-weight: 900;
     transition: 0.5s;
-    /* margin-bottom: 150px; */
 }
 .resume-bg:hover {
     background: linear-gradient(-90deg, rgba(37, 36, 41, 0.7), #03144e96);
@@ -216,7 +175,7 @@ h1 {
     margin: 25px 0px;
     padding: 20px 20px;
     margin-bottom: 15vh;
-    width: 95vw;
+    width: 90vw;
     border-radius: 20px;
 }
 .about {
@@ -241,28 +200,13 @@ h1 {
     padding: 3px;
     margin: 0;
     justify-self: center;
-    width: 200px;
-    height: 200px;
+    width: 6rem;
+    height: 5rem;
     border-radius: 20px;
     transition: 1s;
 }
 .about-image:hover {
-    transform: scale(1.1);
-}
-
-@media only screen and (orientation: landscape){
-    .profile_about{
-        grid-template-columns: 25% auto 25%;
-    }
-    .about{
-        font-size: 0.85em;
-    }
-    .info {
-        grid-column: 2 / 3;
-    }
-    .ab-img-adj {
-        grid-column: 1 / 2;
-    }
+    transform: scale(1.5);
 }
 
 
@@ -291,36 +235,19 @@ input {
     color: cornsilk;
     border: 3px solid cornsilk;
     border-radius: 20px;
-    padding: 20px 35px;
+    padding: 15px 35px;
     width: 60%; 
 }
 
 form {
     font-size: 0.8em;
     display: grid;
-    height: 1600px;
+    padding: 40px 0px;
     align-content: center;
     grid-template-rows: auto 110px 110px 112px 300px 85px 70px 100px auto;
     grid-template-columns: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-}
-
-@media only screen and (orientation: landscape){
-    form {
-        height: 900px;
-        grid-template-rows: auto 85px 85px 87px 200px 85px 70px 100px auto;
-    }
-    input {
-        width: 40%;
-        padding: 10px 30px;
-    }
-    .reasons {
-        padding: 10px 30px;
-    }
-    .message {
-        height: 200px;
-    }
 }
 
 .reasons {
@@ -330,7 +257,7 @@ form {
     border: 3px solid cornsilk;
     border-radius: 30px;
     padding: 15px 30px;
-    width: 30%;
+    width: 60%;
 }
 
 .message {
@@ -340,8 +267,8 @@ form {
     border: 3px solid cornsilk;
     color: cornsilk;
     text-align: start;
-    width: 60%;
-    height: 300px;
+    width: 80%;
+    height: 100px;
     padding: 15px 10px;
 }
 
@@ -370,10 +297,17 @@ form {
     margin-bottom: 60px;
 }
 .title-container {
-    font-size: 2em;
     margin: 30px;
     padding: 10px 20px;
     border-radius: 20px;
+}
+h3 {
+    margin: 5px 0px;
+    font-size: 0.8rem;
+}
+h4 {
+    margin: 0px;
+    margin-bottom: 5px;
 }
 
 
@@ -391,22 +325,25 @@ form {
     grid-template-columns: 25vw auto 40vw;
     grid-template-areas: 
     "Info . Image";
-    height: 300px;
     border-radius: 5px;
-    width: 85%;
-    margin: 50px 0px;
-    padding: 20px 0px;
+    width: 95%;
+    margin: 30px 0px;
+    padding: 0px;
     background: linear-gradient(90deg, rgba(0, 24, 30, 0.6) 0%, rgba(1, 43, 54, 0.8) 100%);
 
 }
 .project-info {
     align-self: center;
     grid-column: 1 / 3;
-    padding-left: 10px;
+    padding: 10px;
+    font-size: 0.65rem;
+}
+.project-info > p {
+    margin: 5px 0px;
 }
 .icon {
-    height: 30px;
-    width: 30px;
+    height: 15px;
+    width: 15px;
 }
 .image-box {
     display: grid;
@@ -415,7 +352,7 @@ form {
 }
 .image-box > a {
     justify-self: center;
-    width: 85%;
+    width: 90%;
 }
 .project-image {
     height: auto;
@@ -473,7 +410,7 @@ form {
 /* NAV BAR */
 
 .bottom-nav {
-    height: 80px;
+    height: 60px;
     background: linear-gradient(rgb(20, 20, 20, 0.8) 10%, rgb(26, 26, 26) 40%, rgb(32, 32, 32) 50%, rgb(26, 26, 26) 60%, rgb(20, 20, 20, 0.8) 90%);
     overflow: hidden;
     position: fixed;
@@ -486,7 +423,7 @@ form {
 }
 #bottom-nav-links {
     display: grid;
-    grid-template-columns: auto 20vw 20vw 20vw 20vw auto;
+    grid-template-columns: auto 24vw 24vw 24vw 24vw auto;
     grid-template-rows: 1;
     height: 100%;
     margin: 0;
@@ -496,16 +433,17 @@ form {
     list-style: none;
     align-self: center;
     justify-self: center;
+    justify-content: center;
 }
 #bottom-nav-links > li > a {
     display: block;
     text-align: center;
-    justify-content: center;
-    width: 140px;
-    height: 30px;
+    width: 75px;
+    height: 20px;
 }
 #links {
-    font-size: 1.25em;
+    font-size: 0.75rem;
+    font-weight: 900;
     text-decoration: none;
     padding: 1vh 1vw;
     margin: 0;
@@ -515,7 +453,9 @@ form {
     margin: 0;
 }
 #active {
-    font-size: 1.25em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-shadow: -1px -1px #337183, 1px 1px #337183, -1px 1px #337183, 1px -1px #337183;
     text-decoration: none;
     padding: 1vh 1vw;
     margin: 0;
@@ -526,4 +466,58 @@ form {
 #links:hover {
     background-color: black;
     color: #033E4E;
+}
+
+
+
+/* Adjustment For Device Scaling  */
+
+@media only screen and (min-width: 742px){
+    /* Home Page */
+    .title {
+        margin-top: 5vh;
+    }
+    .Name {
+        font-size: 3.0rem;
+        width: 60vw;
+        margin: 0px;
+    }
+
+    /* About Me Page */
+    .profile_about{
+        grid-template-columns: 25% auto 25%;
+    }
+    .profile_pic {
+        width: 275px;
+    }
+    .about{
+        font-size: 0.85rem;
+    }
+    .about-image {
+        height: 12rem;
+        width: 15rem;
+    }
+    .info {
+        grid-column: 2 / 3;
+    }
+    .ab-img-adj {
+        grid-column: 1 / 2;
+    }
+
+    /* Contact Page */
+    form {
+        grid-template-rows: auto 85px 85px 87px 200px 85px 70px 100px auto;
+    }
+    input {
+        width: 40%;
+        padding: 10px 30px;
+    }
+    .reasons {
+        width: 40%;
+        padding: 10px 30px;
+    }
+    .message {
+        width: 60%;
+        height: 200px;
+    }
 }
