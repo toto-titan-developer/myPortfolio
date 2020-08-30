@@ -104,7 +104,6 @@ h1 {
     text-shadow: none;
     font-size: 2.2rem;
     margin: 0px;
-    width: 85vw;
     background: linear-gradient(90deg, #033E4E, #00181E);
     -webkit-background-clip: text;
     background-clip: text;
@@ -402,7 +401,7 @@ h4 {
 }
 .logo-3 {
     margin-right: 20px;
-    width: 75px;
+    width: 40px;
     height: auto;
 }
 
@@ -438,7 +437,7 @@ h4 {
 #bottom-nav-links > li > a {
     display: block;
     text-align: center;
-    width: 75px;
+    width: 80px;
     height: 20px;
 }
 #links {
@@ -479,7 +478,6 @@ h4 {
     }
     .Name {
         font-size: 3.0rem;
-        width: 60vw;
         margin: 0px;
     }
 
