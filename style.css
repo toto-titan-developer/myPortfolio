@@ -225,7 +225,6 @@ h1 {
 
 #form-bg {
     font-size: 1.2em;
-    border-radius: 10px;
     color: azure;
 }
 
@@ -243,10 +242,9 @@ form {
     display: grid;
     padding: 40px 0px;
     align-content: center;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: 50px auto auto auto auto auto auto auto 50px;
     grid-template-columns: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .reasons {
@@ -327,7 +325,7 @@ h4 {
     border-radius: 5px;
     width: 95%;
     margin: 30px 0px;
-    padding: 0px;
+    padding: 5px;
     background: linear-gradient(90deg, rgba(0, 24, 30, 0.6) 0%, rgba(1, 43, 54, 0.8) 100%);
 
 }
@@ -516,5 +514,37 @@ h4 {
     .message {
         width: 60%;
         height: 200px;
+    }
+
+    /* Projects Page */
+
+    .project {
+        padding: 20px 10px;
+    }
+
+    .project-info {
+        font-size: 0.9rem;
+        margin-left: 100px;
+    }
+    h3 {
+        font-size: 1.3rem;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Bottom Nav Links */
+    #bottom-nav-links {
+        grid-template-columns: auto 12vw 12vw 12vw 12vw auto;
+    }
+    #bottom-nav-links > li > a {
+        width: 120px;
+    }
+    #links {
+        font-size: 1.0rem;
+    }
+    #active {
+        font-size: 1.0rem;
     }
 }
