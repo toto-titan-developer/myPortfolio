@@ -394,7 +394,7 @@ h4 {
 }
 
 .logo-2 {
-    width: 10vw;
+    width: 20vw;
     height: auto;
 }
 .logo-3 {
@@ -546,5 +546,9 @@ h4 {
     }
     #active {
         font-size: 1.0rem;
+    }
+
+    .logo-2 {
+        width: 12vw;
     }
 }
