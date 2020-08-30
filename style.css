@@ -145,7 +145,7 @@ h1 {
     text-shadow: -2px -2px rgb(1, 29, 1), 2px -2px rgb(1, 29, 1),-2px 2px rgb(1, 29, 1), 2px 2px rgb(1, 29, 1); 
     border: 5px double blanchedalmond;
     border-radius: 10px;
-    height: 35px;
+    height: auto;
     width: 200px;
     font-size: 1.5em;
     font-weight: 900;
@@ -234,7 +234,7 @@ input {
     color: cornsilk;
     border: 3px solid cornsilk;
     border-radius: 20px;
-    padding: 15px 35px;
+    padding: 10px 35px;
     width: 60%; 
 }
 
@@ -243,7 +243,7 @@ form {
     display: grid;
     padding: 40px 0px;
     align-content: center;
-    grid-template-rows: auto 110px 110px 112px 300px 85px 70px 100px auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
     grid-template-columns: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
@@ -255,7 +255,7 @@ form {
     color: cornsilk;
     border: 3px solid cornsilk;
     border-radius: 30px;
-    padding: 15px 30px;
+    padding: 8px 30px;
     width: 60%;
 }
 
@@ -410,7 +410,7 @@ h4 {
 
 .bottom-nav {
     height: 60px;
-    background: linear-gradient(rgb(20, 20, 20, 0.8) 10%, rgb(26, 26, 26) 40%, rgb(32, 32, 32) 50%, rgb(26, 26, 26) 60%, rgb(20, 20, 20, 0.8) 90%);
+    background: linear-gradient(rgb(20, 20, 20, 0.9) 10%, rgb(26, 26, 26) 40%, rgb(32, 32, 32) 50%, rgb(26, 26, 26) 60%, rgb(20, 20, 20, 0.9) 90%);
     overflow: hidden;
     position: fixed;
     z-index: 10;
@@ -438,7 +438,7 @@ h4 {
     display: block;
     text-align: center;
     width: 80px;
-    height: 20px;
+    height: auto;
 }
 #links {
     font-size: 0.75rem;
@@ -453,8 +453,7 @@ h4 {
 }
 #active {
     font-size: 0.75rem;
-    font-weight: 700;
-    text-shadow: -1px -1px #337183, 1px 1px #337183, -1px 1px #337183, 1px -1px #337183;
+    font-weight: 900;
     text-decoration: none;
     padding: 1vh 1vw;
     margin: 0;
